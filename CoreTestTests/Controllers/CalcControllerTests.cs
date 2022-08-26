@@ -14,7 +14,7 @@ namespace CoreTest.Controllers.Tests
             // Act
             var result = test.Add(1, 2);
             // Assert
-            Assert.AreEqual(5, result);
+            Assert.AreEqual(3, result);
         }
     }
 }
