@@ -17,7 +17,7 @@
         public int Balance { get { return balance; } }
 
 
-        [HttpGet(Name = "Deposit/{a}")]
+        [HttpGet(Name = "Deposit/{amount}")]
         public int Deposit(int amount)
         {
             if (amount < 0)
@@ -28,7 +28,7 @@
             return Balance;
         }
 
-        [HttpGet(Name = "Withdraw/{a}")]
+        [HttpGet(Name = "Withdraw/{amount}")]
         public int Withdraw(int amount)
         {
             if (amount < 0)
@@ -38,6 +38,5 @@
             balance -= amount;
             return Balance;
         }
-
     }
 }
